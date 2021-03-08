@@ -5,10 +5,9 @@ body {
   color: #1F3F68;
 }
 .container {
-  max-width: 1366px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 20px;
-  border: 1px solid blue;
+  padding: 0 113px;
 }
 .main-nav {
   max-height: 48px;
@@ -126,7 +125,6 @@ body {
   margin: 32px auto;
 }
 .letsTalk {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -135,29 +133,24 @@ body {
   font-weight: 100;
   font-size: 40px;
   line-height: 40px;
-  border: 1px solid red;
+  margin-top: 91px;
 }
 .letsTalk__item--1 {
-  max-width: 350px;
-  border: 1px solid red;
+  max-width: 495px;
 }
 .letsTalk__button {
   padding: 10px 70px;
-  background-color: lightblue;
+  background-color: #5A98D0;
   border: none;
   color: white;
 }
 .footer {
-  background-color: cornflowerblue;
+  background-color: #316099;
   color: white;
 }
 .footer a {
   color: white;
-}
-.footer ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  text-decoration: none;
 }
 .contactUs::before {
   display: block;
@@ -168,7 +161,9 @@ body {
 }
 .contactUsList {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 64px;
+  padding: 0;
 }
 .contactUsList__item {
   display: flex;
@@ -177,28 +172,25 @@ body {
 .contactUsList__item--1::before {
   content: "A.";
   display: inline;
-  border: 1px solid red;
   margin-right: 10px;
 }
 .contactUsList__item--2::before {
   content: "T.";
   display: inline;
-  border: 1px solid red;
   margin-right: 10px;
 }
 .contactUsList__item--3::before {
   content: "E.";
   display: inline;
-  border: 1px solid red;
   margin-right: 10px;
 }
 .copyright {
-  padding: 10px 20px;
+  padding: 64px 0;
+  opacity: 0.4;
 }
 .contacts-intro {
   min-height: 200px;
   background-color: lightblue;
-  border: 1px solid red;
   color: white;
   text-align: center;
 }
@@ -233,9 +225,10 @@ body {
   background-image: url("../img/index-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 10px;
 }
 .nav-list__item--1 a:hover {
-  background-color: lightgrey;
+  background-color: #E8F1F7;
 }
 .nav-list__item--2 a {
   display: block;
@@ -244,9 +237,10 @@ body {
   background-image: url("../img/contacts-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 10px;
 }
 .nav-list__item--2 a:hover {
-  background-color: lightgrey;
+  background-color: #E8F1F7;
 }
 .gallery__text {
   color: white;
@@ -276,7 +270,6 @@ body {
   margin: 0 auto;
 }
 .gallery__item {
-  outline: 1px solid red;
   margin-bottom: 32px;
   border-radius: 10px;
   height: 26em;
