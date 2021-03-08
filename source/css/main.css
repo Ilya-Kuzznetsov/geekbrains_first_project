@@ -289,15 +289,24 @@ body {
   background-repeat: no-repeat;
   background-size: inherit;
 }
+.gallery__item--1:hover {
+  background-image: url("../img/smart-home-hover.png");
+}
 .gallery__item--2 {
   background-image: url("../img/sparklightapp.png");
   background-repeat: no-repeat;
   background-size: inherit;
 }
+.gallery__item--2:hover {
+  background-image: url("../img/sparklightapp-hover.png");
+}
 .gallery__item--3 {
   background-image: url("../img/carrepairing.png");
   background-repeat: no-repeat;
   background-size: inherit;
+}
+.gallery__item--3:hover {
+  background-image: url("../img/carrepairing-hover.png");
 }
 
 /*# sourceMappingURL=main.css.map */
