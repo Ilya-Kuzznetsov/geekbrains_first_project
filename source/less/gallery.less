@@ -1,0 +1,35 @@
+.gallery{
+  &__text{
+    color: white;
+    float: right;
+    padding: 64px;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 42px;
+    text-align: right;
+  }
+  &__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  &__item{
+    outline: 1px solid red;
+    flex-grow: 1;
+    margin-bottom: 32px;
+    border-radius: 10px;
+    &--1{
+      flex-grow: 2;
+      height: 30em;
+      width: 72em;
+      background-image: url("../img/smart-home.png");
+      background-repeat: no-repeat;
+      background-size: inherit;
+    }
+  }
+}

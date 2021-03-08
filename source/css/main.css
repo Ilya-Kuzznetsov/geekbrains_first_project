@@ -5,7 +5,7 @@ body {
   color: #1F3F68;
 }
 .container {
-  max-width: 1140px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 0 20px;
   border: 1px solid blue;
@@ -21,7 +21,6 @@ body {
 }
 .main-text {
   background-image: url("../img/gradient.png");
-  background-repeat: no-repeat;
   background-size: inherit;
   background-position: bottom;
   min-height: 768px;
@@ -60,10 +59,12 @@ body {
 }
 .catalog__List {
   display: flex;
-  justify-content: space-around;
+  max-width: 1140px;
+  justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  margin: 0 auto;
 }
 .catalog__item {
   max-width: 300px;
@@ -104,17 +105,20 @@ body {
   align-content: center;
   margin: 10px auto;
 }
+.ourFinishedProjects {
+  text-align: center;
+}
 .ourFinishedProjects__header {
   font-weight: 100;
   font-size: 40px;
   line-height: 40px;
-  border: 1px solid red;
-  margin: 10px auto;
+  margin: 32px auto;
   text-align: center;
 }
 .ourFinishedProjects__text {
-  border: 1px solid red;
   text-align: center;
+  max-width: 750px;
+  margin: 32px auto;
 }
 .letsTalk {
   border: 1px solid red;
@@ -238,6 +242,39 @@ body {
 }
 .nav-list__item--2 a:hover {
   background-color: lightgrey;
+}
+.gallery__text {
+  color: white;
+  float: right;
+  padding: 64px;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 42px;
+  text-align: right;
+}
+.gallery__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.gallery__item {
+  outline: 1px solid red;
+  flex-grow: 1;
+  margin-bottom: 32px;
+  border-radius: 10px;
+}
+.gallery__item--1 {
+  flex-grow: 2;
+  height: 30em;
+  width: 72em;
+  background-image: url("../img/smart-home.png");
+  background-repeat: no-repeat;
+  background-size: inherit;
 }
 
 /*# sourceMappingURL=main.css.map */
