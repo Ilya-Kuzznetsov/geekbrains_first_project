@@ -1,17 +1,14 @@
 .main-text{
+  min-height: 768px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   &__background{
     height: 768px;
     width: 100%;
     position: absolute;
     background-image: url("../img/gradient.png");
-    background-size: inherit;
-    background-position: bottom;
   }
-  position: relative;
-  min-height: 768px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   &__header{
     max-width: 510px;
     font-size: 64px;
@@ -21,13 +18,18 @@
   &__text{
     max-width: 425px;
     margin-bottom: 100px;
-    }
-  &::after {
-    content: " ";
-    display: block;
-    background-image: url("../img/main-page-illustration.png");
-    width: 550px;
-    height: 490px;
   }
+  &__item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &::after {
+      content: " ";
+      display: block;
+      background-image: url("../img/main-page-illustration.png");
+      width: 550px;
+      height: 490px;
+      }
+    }
   }
 

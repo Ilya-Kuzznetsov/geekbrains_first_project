@@ -18,7 +18,6 @@ body {
   list-style: none;
 }
 .main-text {
-  position: relative;
   min-height: 768px;
   display: flex;
   justify-content: space-around;
@@ -29,8 +28,6 @@ body {
   width: 100%;
   position: absolute;
   background-image: url("../img/gradient.png");
-  background-size: inherit;
-  background-position: bottom;
 }
 .main-text__header {
   max-width: 510px;
@@ -42,7 +39,12 @@ body {
   max-width: 425px;
   margin-bottom: 100px;
 }
-.main-text::after {
+.main-text__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-text__item::after {
   content: " ";
   display: block;
   background-image: url("../img/main-page-illustration.png");
