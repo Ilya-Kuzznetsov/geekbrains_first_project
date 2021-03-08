@@ -46,12 +46,16 @@ body {
   width: 550px;
   height: 490px;
 }
+.catalog {
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
 .catalog__mainHeader {
   font-weight: 100;
   font-size: 40px;
   line-height: 40px;
-  border: 1px solid red;
-  margin: 10px auto;
+  margin: 64px auto;
   text-align: center;
 }
 .catalog__List {
@@ -59,31 +63,46 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   list-style: none;
-  border: 1px solid red;
   padding: 0;
 }
 .catalog__item {
-  max-width: 315px;
+  max-width: 300px;
   min-width: 100px;
-  border: 1px solid red;
+  min-height: 480px;
   margin-bottom: 20px;
-}
-.catalogItem {
-  margin: 0 10px;
+  padding: 0 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 25px lightskyblue;
 }
 .catalogItem__header {
   font-size: 20px;
   font-weight: 400;
-  border: 1px solid red;
+  margin: 0;
 }
-.catalogItem__text {
-  border: 1px solid red;
+.catalogItem__header::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  height: 150px;
+}
+.catalogItem__header--1::before {
+  background-image: url("../img/card1.png");
+  width: 172px;
+}
+.catalogItem__header--2::before {
+  background-image: url("../img/card2.png");
+  width: 132px;
+}
+.catalogItem__header--3::before {
+  background-image: url("../img/card3.png");
+  width: 148px;
 }
 .catalogItem__image {
   display: block;
   align-content: center;
   margin: 10px auto;
-  border: 1px solid red;
 }
 .ourFinishedProjects__header {
   font-weight: 100;

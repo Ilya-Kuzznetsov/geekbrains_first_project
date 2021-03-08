@@ -1,10 +1,10 @@
 .catalog{
+  min-height: fit-content;
   &__mainHeader{
     font-weight: 100;
     font-size: 40px;
     line-height: 40px;
-    border: 1px solid red;
-    margin: 10px auto;
+    margin: 64px auto;
     text-align: center;
   }
   &__List{
@@ -12,30 +12,53 @@
     justify-content: space-around;
     flex-wrap: wrap;
     list-style: none;
-    border: 1px solid red;
     padding: 0;
   }
   &__item{
-    max-width: 315px;
+    max-width: 300px;
     min-width: 100px;
-    border: 1px solid red;
+    min-height: 480px;
     margin-bottom: 20px;
+    padding: 0 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px lightskyblue;
   }
   &Item{
-    margin: 0 10px;
     &__header{
       font-size: 20px;
       font-weight: 400;
-      border: 1px solid red;
-    }
-    &__text{
-      border: 1px solid red;
+      margin: 0;
+      &::before{
+        content: "";
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto;
+        height: 150px;
+      }
+      &--1{
+        &::before{
+          background-image: url("../img/card1.png");
+          width: 172px;
+        }
+      }
+      &--2{
+        &::before{
+          background-image: url("../img/card2.png");
+          width: 132px;
+        }
+      }
+      &--3{
+        &::before{
+          background-image: url("../img/card3.png");
+          width: 148px;
+        }
+      }
     }
     &__image{
       display: block;
       align-content: center;
       margin: 10px auto;
-      border: 1px solid red;
     }
   }
 }
