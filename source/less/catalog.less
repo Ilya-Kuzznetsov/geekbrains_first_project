@@ -1,0 +1,41 @@
+.catalog{
+  &__mainHeader{
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 40px;
+    border: 1px solid red;
+    margin: 10px auto;
+    text-align: center;
+  }
+  &__List{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    border: 1px solid red;
+    padding: 0;
+  }
+  &__item{
+    max-width: 315px;
+    min-width: 100px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+  }
+  &Item{
+    margin: 0 10px;
+    &__header{
+      font-size: 20px;
+      font-weight: 400;
+      border: 1px solid red;
+    }
+    &__text{
+      border: 1px solid red;
+    }
+    &__image{
+      display: block;
+      align-content: center;
+      margin: 10px auto;
+      border: 1px solid red;
+    }
+  }
+}

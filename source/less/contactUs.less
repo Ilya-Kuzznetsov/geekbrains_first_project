@@ -1,0 +1,41 @@
+.contactUs{
+  &::before{
+    display: block;;
+    height: 5px;
+    width: 100%;
+    background-color: lightblue;
+    content: " ";
+  }
+  &List{
+    display: flex;
+    justify-content: space-around;
+    &__item{
+      display: flex;
+      align-items: center;
+      &--1{
+        &::before{
+          content: "A.";
+          display: inline;
+          border: 1px solid red;
+          margin-right: 10px;
+        }
+      }
+      &--2{
+        &::before{
+          content: "T.";
+          display: inline;
+          border: 1px solid red;
+          margin-right: 10px;
+        }
+      }
+      &--3{
+        &::before{
+          content: "E.";
+          display: inline;
+          border: 1px solid red;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

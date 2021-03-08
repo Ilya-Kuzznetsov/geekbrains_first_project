@@ -1,0 +1,183 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #1F3F68;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.main-nav {
+  border: 1px solid red;
+}
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.main-text {
+  border: 1px solid red;
+}
+.main-text__header {
+  border: 1px solid red;
+  max-width: 510px;
+  font-size: 64px;
+  font-weight: 200;
+  line-height: 64px;
+}
+.main-text__text {
+  max-width: 425px;
+  border: 1px solid red;
+}
+.catalog__mainHeader {
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 40px;
+  border: 1px solid red;
+  margin: 10px auto;
+  text-align: center;
+}
+.catalog__List {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  border: 1px solid red;
+  padding: 0;
+}
+.catalog__item {
+  max-width: 315px;
+  min-width: 100px;
+  border: 1px solid red;
+  margin-bottom: 20px;
+}
+.catalogItem {
+  margin: 0 10px;
+}
+.catalogItem__header {
+  font-size: 20px;
+  font-weight: 400;
+  border: 1px solid red;
+}
+.catalogItem__text {
+  border: 1px solid red;
+}
+.catalogItem__image {
+  display: block;
+  align-content: center;
+  margin: 10px auto;
+  border: 1px solid red;
+}
+.ourFinishedProjects__header {
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 40px;
+  border: 1px solid red;
+  margin: 10px auto;
+  text-align: center;
+}
+.ourFinishedProjects__text {
+  border: 1px solid red;
+  text-align: center;
+}
+.letsTalk {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.letsTalk__header {
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 40px;
+  border: 1px solid red;
+}
+.letsTalk__item--1 {
+  max-width: 350px;
+  border: 1px solid red;
+}
+.letsTalk__button {
+  padding: 10px 70px;
+  background-color: lightblue;
+  border: none;
+  color: white;
+}
+.footer {
+  background-color: cornflowerblue;
+  color: white;
+}
+.footer a {
+  color: white;
+}
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contactUs::before {
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: lightblue;
+  content: " ";
+}
+.contactUsList {
+  display: flex;
+  justify-content: space-around;
+}
+.contactUsList__item {
+  display: flex;
+  align-items: center;
+}
+.contactUsList__item--1::before {
+  content: "A.";
+  display: inline;
+  border: 1px solid red;
+  margin-right: 10px;
+}
+.contactUsList__item--2::before {
+  content: "T.";
+  display: inline;
+  border: 1px solid red;
+  margin-right: 10px;
+}
+.contactUsList__item--3::before {
+  content: "E.";
+  display: inline;
+  border: 1px solid red;
+  margin-right: 10px;
+}
+.copyright {
+  padding: 10px 20px;
+}
+.contacts-intro {
+  min-height: 200px;
+  background-color: lightblue;
+  border: 1px solid red;
+  color: white;
+  text-align: center;
+}
+.contacts-intro__header {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 100;
+}
+.contactsMainBlock {
+  display: flex;
+}
+.contactsMainBlock__item {
+  border: 1px solid red;
+  flex-grow: 1;
+}
+.contactsMainBlock__item--left ul {
+  list-style: none;
+  padding: 0;
+}
+.contactsForm {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=main.css.map */
