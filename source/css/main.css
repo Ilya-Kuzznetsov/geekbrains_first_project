@@ -11,7 +11,6 @@ body {
   border: 1px solid blue;
 }
 .main-nav {
-  max-width: 1140px;
   max-height: 48px;
 }
 .main-nav__list {
@@ -20,13 +19,19 @@ body {
   list-style: none;
 }
 .main-text {
-  background-image: url("../img/gradient.png");
-  background-size: inherit;
-  background-position: bottom;
+  position: relative;
   min-height: 768px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.main-text__background {
+  height: 768px;
+  width: 100%;
+  position: absolute;
+  background-image: url("../img/gradient.png");
+  background-size: inherit;
+  background-position: bottom;
 }
 .main-text__header {
   max-width: 510px;
@@ -60,7 +65,7 @@ body {
 .catalog__List {
   display: flex;
   max-width: 1140px;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
@@ -70,7 +75,7 @@ body {
   max-width: 300px;
   min-width: 100px;
   min-height: 480px;
-  margin-bottom: 20px;
+  margin: 0 10px 20px 10px;
   padding: 0 30px;
   border-radius: 10px;
   box-shadow: 5px 5px 25px lightskyblue;
@@ -253,10 +258,18 @@ body {
   line-height: 42px;
   text-align: right;
 }
+.gallery__text--2 {
+  padding: 32px;
+  float: left;
+}
+.gallery__text--3 {
+  padding: 32px;
+  float: left;
+}
 .gallery__list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 0;
   max-width: 1140px;
@@ -264,15 +277,25 @@ body {
 }
 .gallery__item {
   outline: 1px solid red;
-  flex-grow: 1;
   margin-bottom: 32px;
   border-radius: 10px;
+  height: 26em;
+  width: 35em;
 }
 .gallery__item--1 {
-  flex-grow: 2;
   height: 30em;
   width: 72em;
   background-image: url("../img/smart-home.png");
+  background-repeat: no-repeat;
+  background-size: inherit;
+}
+.gallery__item--2 {
+  background-image: url("../img/sparklightapp.png");
+  background-repeat: no-repeat;
+  background-size: inherit;
+}
+.gallery__item--3 {
+  background-image: url("../img/carrepairing.png");
   background-repeat: no-repeat;
   background-size: inherit;
 }

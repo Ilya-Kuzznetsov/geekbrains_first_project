@@ -1,7 +1,13 @@
 .main-text{
-  background-image: url("../img/gradient.png");
-  background-size: inherit;
-  background-position: bottom;
+  &__background{
+    height: 768px;
+    width: 100%;
+    position: absolute;
+    background-image: url("../img/gradient.png");
+    background-size: inherit;
+    background-position: bottom;
+  }
+  position: relative;
   min-height: 768px;
   display: flex;
   justify-content: space-around;
