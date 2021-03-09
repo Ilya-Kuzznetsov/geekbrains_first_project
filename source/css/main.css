@@ -28,6 +28,7 @@ body {
   width: 100%;
   position: absolute;
   background-image: url("../img/gradient.png");
+  z-index: -1;
 }
 .main-text__header {
   max-width: 510px;
@@ -190,16 +191,23 @@ body {
   padding: 64px 0;
   opacity: 0.4;
 }
-.contacts-intro {
-  min-height: 200px;
+.contacts-intro__background {
   background-color: lightblue;
   color: white;
   text-align: center;
+  background-image: url("../img/contacts-slider.png");
+  background-repeat: repeat-x;
 }
 .contacts-intro__header {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 44px;
+  line-height: 47px;
   font-weight: 100;
+  padding-top: 51px;
+}
+.contacts-intro__text {
+  max-width: 780px;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 .contactsMainBlock {
   display: flex;
