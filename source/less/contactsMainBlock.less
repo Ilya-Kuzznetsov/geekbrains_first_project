@@ -1,13 +1,71 @@
 .contactsMainBlock{
   display: flex;
+  flex-wrap: wrap;
+  &__text{
+    display: block;
+    max-width: 300px;
+  }
   &__item {
     border: 1px solid red;
     flex-grow: 1;
+    flex-basis: 300px;
     &--left{
-      & ul{
-        list-style: none;
-        padding: 0;
+      &::before{
+        content: "";
+        display: block;
+        width: 300px;
+        height: 181px;
+        background-image: url("../img/girl-on-sofa.png");
       }
+    }
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    &-link {
+      display: flex;
+      text-decoration: none;
+      color: #1F3F68;
+      font-weight: lighter;
+      &--phone {
+        &::before {
+          content: "";
+          display: block;
+          width: 18px;
+          height: 18px;
+          background-image: url("../img/phone.svg");
+          margin-right: 19px;
+        }
+      }
+      &--adress {
+         &::before {
+           content: "";
+           display: block;
+           width: 24px;
+           height: 24px;
+           background-image: url("../img/webglobe.svg");
+           margin-right: 16px;
+         }
+       }
+      &--mail {
+        &::before {
+          content: "";
+          display: block;
+          width: 24px;
+          height: 24px;
+          background-image: url("../img/mail.svg");
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 849px) {
+  .contactsMainBlock{
+    &__item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
