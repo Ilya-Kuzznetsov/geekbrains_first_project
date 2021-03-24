@@ -213,13 +213,16 @@ body {
 .contactsMainBlock {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+}
+.contactsMainBlock h4 {
+  font-size: 20px;
 }
 .contactsMainBlock__text {
   display: block;
   max-width: 300px;
 }
 .contactsMainBlock__item {
-  border: 1px solid red;
   flex-grow: 1;
   flex-basis: 300px;
 }
@@ -274,6 +277,35 @@ body {
 .contactsForm {
   display: flex;
   flex-direction: column;
+  max-width: 540px;
+  min-height: 688px;
+  margin: 0 auto;
+  padding: 56px;
+}
+.contactsForm__legend {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.contactsForm__label {
+  padding: 8px 8px 8px 0;
+  font-size: 16px;
+}
+.contactsForm__inputText {
+  min-height: 72px;
+  padding-left: 43px;
+}
+.contactsForm__textArea {
+  margin-bottom: 72px;
+  padding-left: 43px;
+  padding-top: 21px;
+  resize: none;
+}
+.contactsForm__submit {
+  min-height: 72px;
+  background-color: #5A98D0;
+  border-radius: 10px;
+  border: none;
+  color: white;
 }
 .nav-list {
   font-size: 0;
@@ -361,6 +393,9 @@ body {
 }
 .gallery__item--3:hover {
   background-image: url("../img/carrepairing-hover.png");
+}
+.map {
+  margin: 112px auto;
 }
 
 /*# sourceMappingURL=main.css.map */

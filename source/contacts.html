@@ -94,20 +94,26 @@
       </div>
       <div class="contactsMainBlock__item contactsMainBlock__item--right">
         <form class="contactsForm" action="#">
-          <legend>
+          <legend class="contactsForm__legend">
             Send us message
           </legend>
-          <label for="name">Full name</label>
-          <input type="text" id="name">
-          <label for="email">Email</label>
-          <input type="text" id="email">
-          <label for="message">Message</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
-          <input type="submit">
+          <label for="name" class="contactsForm__label">
+            Full name
+          </label>
+          <input type="text" id="name" class="contactsForm__inputText" placeholder="Your Name">
+          <label for="email" class="contactsForm__label">
+            Email
+          </label>
+          <input type="text" id="email" class="contactsForm__inputText" placeholder="Your Email">
+          <label for="message" class="contactsForm__label">
+            Message
+          </label>
+          <textarea name="message" id="message" cols="30" rows="10" class="contactsForm__textArea" placeholder="Your Message"></textarea>
+          <input type="submit" class="contactsForm__submit" value="Submit">
         </form>
       </div>
     </div>
-    <div class="container">
+    <div class="container map">
       <script text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A42cd4a3c49db06e7a29f01983564e0e6e38eebc053d6e25d73d2a49973874410&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
     </div>
 
